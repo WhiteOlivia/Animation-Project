@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+}
+html {
+  overflow: hidden;
+}
+#copter {
+  height: 30%;
+  position: absolute;
+  animation: copter 10s infinite;
+  top: 50%;
+  left: 60%;
+}
+#rainbow {
+  height: 40%;
+  position: absolute;
+  animation: rainbow 10s infinite;
+  top: 55%;
+}
+#sky {
+  width: 100%; 
+  height: 50%;
+  background-color: lightblue;
+  position: absolute; 
+  animation: sky 10s infinite;
+}
+#boat {
+  height: 40%;
+  position: absolute;
+  top: 7%;
+  left: -35%;
+  animation: sail 15s infinite; 
+}
+#sea {
+  width: 100%;
+  height: 50%;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  
+}
+#sun {
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 45%;
+  animation: sunrise 10s infinite;
+}
+#clouds {
+  top: 10%;
+  left: 10%;
+}
+#clouds2 {
+  top: 30%;
+  left: 60%;
+}
+#clouds,#clouds2 {
+  height: 200px;
+  position: absolute;
+  animation: clouds 10s infinite;
+}
+@keyframes sunrise {
+  0% {
+    left: 0%;
+    top: 100%;
+  }
+  33% {
+    top: 0%;
+    left: 40%;
+  }
+  66% {
+    top: 0%;
+    left: 40%;
+   }
+  100% {
+   top: 90%;
+    left: 90%;
+
+}
+}
+
+@keyframes sky{
+  0% {
+    background-color: black;
+  }
+  33% {
+    background-color: lightblue;
+  }
+  66% {
+    background-color: lightblue;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes sail {
+  0% {
+    left: -35%;
+  }
+  100% {
+    left: 100%; 
+  }
+}
+@keyframes copter {
+  0% {
+    top: 80%;
+  }
+  100% {
+    top: -30%
+  }
+}
+@keyframes rainbow {
+  0% {
+    top: 55%;
+    opacity: 0;
+  }
+  33% {
+    top: 15%;
+    opacity: 1;
+  }
+  66% {
+    top: 15%;
+    opacity: 1;
+  }
+  100% {
+    top: 55%;
+    opacity: 0;
+  }
+}
+@keyframes clouds {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity:0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
